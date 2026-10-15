@@ -60,12 +60,10 @@ from skyfield.api import EarthSatellite, load
 from skyfield.framelib import itrs
 
 
-DEFAULT_ROOT = Path("/home/yxp/FM/starlink_vhf_137055")
-DEFAULT_SUPGP = DEFAULT_ROOT / "目标确定/sat000062827.csv"
-DEFAULT_RESULTS = DEFAULT_ROOT / "目标确定/results"
-DEFAULT_STATION_CENTER = (
-    DEFAULT_ROOT / "瀑布图/results/e08_station_center_wgs84.csv"
-)
+DEFAULT_ROOT = Path(__file__).resolve().parent
+DEFAULT_SUPGP = DEFAULT_ROOT / "inputs/sat000062827.csv"
+DEFAULT_RESULTS = DEFAULT_ROOT / "results"
+DEFAULT_STATION_CENTER = DEFAULT_ROOT / "inputs/e08_station_center_wgs84.csv"
 
 EVENT1_STATE_UTC = datetime(2025, 4, 15, 14, 0, 0, 250000, tzinfo=timezone.utc)
 EVENT_SPACING_S = 99.9991
@@ -73,6 +71,15 @@ VELOCITY_WEIGHT_S = 100.0
 TIME_BOUND_S = 180.0
 RF_FREQUENCY_HZ = 137_055_000.0
 LIGHT_SPEED_KM_S = 299_792.458
+
+
+def _public_path(path: str | Path) -> str:
+    """Return a repository-relative path, masking external locations."""
+    path = Path(path)
+    try:
+        return str(path.resolve().relative_to(DEFAULT_ROOT))
+    except ValueError:
+        return f"XXX/{path.name}"
 
 EARTH_MU_KM3_S2 = 398600.4418
 WGS84_EQUATORIAL_RADIUS_KM = 6378.137
@@ -161,7 +168,7 @@ def load_station_center(path: str | Path) -> dict[str, float | str]:
         raise ValueError("Expected exactly one E08 row in the station-center CSV")
     row = table.iloc[0]
     return {
-        "source_file": str(path),
+        "source_file": _public_path(path),
         "station": "E08",
         "longitude_deg_east": float(row["longitude_deg_east"]),
         "latitude_deg_north": float(row["latitude_deg_north"]),
@@ -599,7 +606,7 @@ def run_validation(
             "not a replacement for the original all-catalogue blind search."
         ),
         "input": {
-            "supgp_csv": str(supgp_csv),
+            "supgp_csv": _public_path(supgp_csv),
             "sha256": _sha256(supgp_csv),
             "records": len(rows),
             "epoch_start_utc": _parse_epoch(rows[0]["EPOCH"]),
