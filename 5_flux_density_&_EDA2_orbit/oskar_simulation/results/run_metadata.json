@@ -1,0 +1,35 @@
+{
+  "frequency_hz": 137055000.0,
+  "image_size_pixels": 128,
+  "num_unique_elements": 127,
+  "num_event_direction_samples": 828,
+  "station": {
+    "name": "21CMA E08",
+    "longitude_deg_east": 86.723982044547,
+    "latitude_deg_north": 42.924240425222,
+    "wgs84_ellipsoidal_height_m": 2607.04074532818
+  },
+  "phase_centre": {
+    "ra_deg": 0.0,
+    "dec_deg": 90.0,
+    "name": "NCP"
+  },
+  "model_assumptions": [
+    "127 measured E/N/U element positions",
+    "identical isotropic unpolarised elements",
+    "equal element weights",
+    "array factor enabled and normalised",
+    "power normalised to unity at NCP phase centre",
+    "no measured embedded element pattern",
+    "no mutual coupling or terrain",
+    "no cable, gain, or phase errors"
+  ],
+  "inputs": {
+    "antenna_coordinates": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/5_flux_density/ant_pos.py",
+    "event_directions": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/results/5_flux_density/oskar_input/four_event_direction_timeseries.csv"
+  },
+  "settings": {
+    "image": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/5_flux_density/oskar_simulation/config/e08_horizon_beam_137055.ini",
+    "exact_samples": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/5_flux_density/oskar_simulation/config/e08_four_event_samples_137055.ini"
+  }
+}

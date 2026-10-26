@@ -1,0 +1,2 @@
+# station_east_m station_north_m station_up_m
+0.000000000 0.000000000 0.000000000

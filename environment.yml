@@ -1,0 +1,19 @@
+name: 21cma-starlink-vhf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - astropy
+  - skyfield
+  - sgp4
+  - requests
+  - jupyterlab
+  - ipykernel
+  - pip
+  - pip:
+      - "LFdemod[starlink-vhf] @ git+https://github.com/JinYi1108/LFdemod.git@v0.2.0.dev0"
+

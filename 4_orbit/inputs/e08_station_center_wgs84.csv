@@ -1,2 +1,0 @@
-station,survey_point_count,x_ecef_m,y_ecef_m,z_ecef_m,longitude_deg_east,latitude_deg_north,ellipsoidal_height_m,center_method,source_file
-E08,6,267421.019333333,4671950.858500000,4323118.161666666,86.723982045,42.924240425,2607.040745328,"mean of six surveyed ECEF XYZ points, then WGS84 conversion",XXX

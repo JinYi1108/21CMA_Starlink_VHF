@@ -1,0 +1,27 @@
+# Downloaded raw voltage data (two files are 16.4 GB in total).
+data/raw/*.dat
+
+# Large public/external catalogues and authenticated Space-Track downloads.
+data/external/eda2/*.csv
+data/external/spacetrack/*
+!data/external/eda2/README.md
+!data/external/spacetrack/README.md
+
+# Generated products.
+results/*
+!results/.gitkeep
+5_flux_density/oskar_simulation/config/
+5_flux_density/oskar_simulation/model/
+5_flux_density/oskar_simulation/results/
+
+# Python/Jupyter local state.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.jupyter_cache/
+.DS_Store
+
+# Credentials and local environment files.
+.env
+*.env
+

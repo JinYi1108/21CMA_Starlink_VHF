@@ -1,0 +1,2 @@
+# longitude_deg latitude_deg WGS84_ellipsoidal_height_m
+86.723982044547 42.924240425222 2607.040745328180
