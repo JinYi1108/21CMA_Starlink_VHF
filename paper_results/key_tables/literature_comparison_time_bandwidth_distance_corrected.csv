@@ -1,0 +1,5 @@
+source,observed_flux_density_mjy,time_correction_factor,bandwidth_correction_factor,distance_correction_factor,corrected_1000km_mjy,note,ratio_to_event1,difference_from_event1_db
+"Grigg et al. (2023), XX+YY total",1.0,3.892625809666168,22.224,0.25,21.62742899850523,assumes Event 1 duration and bandwidth; summed two polarisations,2.3425988329522993,3.696979225909196
+"Grigg et al. (2023), equal-split single-pol equivalent",0.5,3.892625809666168,22.224,0.25,10.813714499252615,additional assumption of equal power in XX and YY,1.1712994164761497,0.6866792692693844
+"Grigg et al. (2025), mean of two strongest fine channels",99.95666244374999,1.946312904833084,1.0,0.18526370067529005,36.04248643707941,assumes Event 1 duration and full containment in one 2-s image,3.903981683168945,5.915077713621453
+"This work, Event 1",20.594578123236005,1.0,1.0,0.4482848608242456,9.232237587708905,packet-average; model-dependent ideal E08 sidelobe correction,1.0,0.0

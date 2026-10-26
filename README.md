@@ -61,25 +61,30 @@ Run notebooks from the repository root in this order:
    test the differential Doppler shift and SupGP match.
 4. `4_orbital_context/4_orbital_context.ipynb` — evaluate cadence-predicted
    visibility and the orbital evolution of STARLINK-32838.
-5. `5_flux_density/prepare_oskar_and_flux_inputs.ipynb` — remeasure the two
+5. `5_flux_density_&_EDA2_orbit/prepare_oskar_and_flux_inputs.ipynb` — remeasure the two
    events, reconstruct the satellite directions, and prepare the station-beam
    inputs. This step reproduces the event-power and ideal-array-factor tables
    without requiring the large EDA2 catalogue or the OSKAR executable.
-6. `5_flux_density/5_flux_density.ipynb` — run the complete Chapter 5 workflow,
+6. `5_flux_density_&_EDA2_orbit/5_flux_density_&_EDA2_orbit.ipynb` — run the complete flux-density and EDA2-orbit workflow,
    including a fresh execution of the preparation notebook, the OSKAR runner,
-   the EDA2 comparison, and the orbital-state re-analysis. The Space-Track
-   portion has one documented download checkpoint after Sect. 10.2; follow
-   the external-input instructions below before resuming at Sect. 10.3.
+   the EDA2 comparison, and the orbital-state re-analysis.
 
 The full-survey search notebook is intentionally separate because it requires
 the non-public 2.4 TB observation set.
 
-## 4. External Chapter 5 inputs
+## 4. Included third-party inputs
 
-The EDA2 catalogue and Space-Track GP histories are not committed. Follow the
-instructions in `data/external/eda2/README.md` and
-`data/external/spacetrack/README.md`. The notebooks generate all subsequent
-tables and figures from these inputs.
+The EDA2 public catalogue is included as a losslessly compressed CSV, and the
+analysis-ready historical Space-Track GP/TLE tables used in the paper are also
+included. Their provenance and checks are documented in
+`data/external/eda2/README.md` and `data/external/spacetrack/README.md`.
+No Space-Track login or EDA2 catalogue download is required to reproduce the
+paper analysis.
+
+The most important paper figures, decoded packets, and summary tables are
+collected in `paper_results/` for direct inspection. These are convenience
+copies; the notebooks continue to write freshly generated products to
+`results/`.
 
 ## Directory map
 
@@ -87,8 +92,8 @@ tables and figures from these inputs.
 2_signal_analysis/            event decoding, spectra, optional full search
 3_satellite_identification/   payload interpretation and satellite matching
 4_orbital_context/            visibility and orbital-evolution analysis
-5_flux_density/               power, beam, EDA2 flux density comparsion and orbit phase analysis
+5_flux_density_&_EDA2_orbit/  power, beam, EDA2 flux-density comparison and orbit-phase analysis
 data/                         immutable primary inputs and download locations
+paper_results/                curated paper figures and principal results
 results/                      generated products
 ```
-

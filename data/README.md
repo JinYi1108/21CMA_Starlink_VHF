@@ -12,9 +12,8 @@ step of the repository workflow.
 - `orbital/`: catalogue TLE, historical TLE, and SpaceX-E SupGP snapshots used
   in the paper analysis.
 - `maps/`: Natural Earth coastline geometry used by the trajectory figure.
-- `external/`: large or authenticated third-party inputs, with per-directory
-  download instructions.
+- `external/`: included third-party inputs used by the EDA2 comparison and
+  orbital-phase analysis, with provenance documented per directory.
 
 Generated products belong under the top-level `results/` directory and are
 ignored by Git.
-

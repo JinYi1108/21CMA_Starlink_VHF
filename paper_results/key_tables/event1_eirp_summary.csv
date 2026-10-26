@@ -1,0 +1,2 @@
+event_id,mean_slant_range_km,packet_average_flux_density_mjy,analysis_bandwidth_hz,packet_duration_s,spectral_eirp_w_hz,band_integrated_eirp_w,band_integrated_eirp_mw,band_integrated_eirp_dbw,band_integrated_eirp_dbm,isotropic_equivalent_packet_energy_j
+Event 1,669.5407835406635,20.594578123236005,41666.666666666664,1.027584,1.160157191269674e-06,0.04833988296956975,48.33988296956975,-13.156944053502054,16.843055946497948,0.04967329030140236

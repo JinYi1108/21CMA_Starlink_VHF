@@ -1,0 +1,10 @@
+,value
+same_protocol_id,True
+protocol_id,5927
+message_increment,1
+unix_candidate_increment_s,100
+event1_preamble_utc,2025-04-15T14:00:00.412697+00:00
+event2_preamble_utc,2025-04-15T14:01:40.399722+00:00
+measured_preamble_spacing_s,99.987025
+preamble_spacing_basis,difference of acquisition-metadata-derived preamble UTCs
+event2_state_block_all_zero,True

@@ -2,7 +2,7 @@
 """Download long-term Space-Track GP histories for all 137.05-MHz emitters.
 
 The input is the emission-segment table produced by Section 10.1 of
-``5_flux_density.ipynb``.  For each unique NORAD object, the query starts
+``5_flux_density_&_EDA2_orbit.ipynb``. For each unique NORAD object, the query starts
 90 days before its first detected 137.05-MHz emission and ends on the current
 UTC date (or on a user-supplied end date).  One query is made per satellite so
 that downloads can be cached and resumed independently.
@@ -94,7 +94,7 @@ def read_emission_segments(path: Path) -> pd.DataFrame:
     if not path.is_file():
         raise FileNotFoundError(
             f"Missing emission-segment table: {path}\n"
-            "Run Section 10.1 of 5_flux_density.ipynb first."
+            "Run Section 10.1 of 5_flux_density_&_EDA2_orbit.ipynb first."
         )
 
     segments = pd.read_csv(path)

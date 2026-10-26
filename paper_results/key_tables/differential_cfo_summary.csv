@@ -1,0 +1,8 @@
+,value
+event1_cfo_hz,-1090.4947916666665
+event2_cfo_hz,-4589.84375
+event2_minus_event1_cfo_hz,-3499.3489583333335
+conservative_empirical_uncertainty_hz,14.427168952277228
+observed_interval_lower_hz,-3513.7761272856105
+observed_interval_upper_hz,-3484.9217893810564
+uncertainty_definition,Per-event sqrt(sample_std_of_15_chirp_CFOs^2 + FFT_grid_sigma^2); event difference by quadrature.

@@ -1,0 +1,29 @@
+satellite_name,norad_id,detection_date_utc,mean_altitude_at_detection_km,altitude_change_rate_km_per_day,orbital_state,orbital_state_zh,tle_coverage,tle_coverage_zh
+STARLINK-5537,55384,2024-08-15,559.019,-0.0001,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-5556,55385,2024-08-15,559.023,-0.0001,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-5329,56513,2024-08-15,559.059,0.0001,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-5336,57138,2024-08-15,559.141,-0.0007,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-30495,57968,2024-08-15,559.088,0.0,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-32128,60272,2024-08-15,386.802,7.0624,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-31745,60329,2024-08-15,316.571,3.4765,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32077,60344,2024-08-15,314.658,3.775,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32186,60412,2024-08-15,289.699,3.8725,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32265,60415,2024-08-15,288.882,3.9674,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-30262,57535,2024-08-16,444.019,-0.0001,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-31921,59868,2024-08-16,327.036,2.3412,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-11158,60403,2024-08-16,299.179,3.4046,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-5537,55384,2024-10-23,559.079,0.0011,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-5556,55385,2024-10-23,559.059,-0.0001,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-5095,56885,2024-10-23,559.069,-0.0007,stable orbital phase,稳定轨道阶段,two-sided,事件前后双侧覆盖
+STARLINK-30406,57881,2024-10-23,461.235,-0.3588,orbit lowering,降轨,two-sided,事件前后双侧覆盖
+STARLINK-31703,59861,2024-10-23,305.593,-3.1354,orbit lowering,降轨,two-sided,事件前后双侧覆盖
+STARLINK-32406,61545,2024-10-23,304.102,7.7627,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32411,61547,2024-10-23,304.24,7.7546,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32389,61549,2024-10-23,303.574,7.8661,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32366,61551,2024-10-23,303.726,7.8523,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32325,61588,2024-10-23,300.524,5.8379,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32416,61589,2024-10-23,,6.0557,orbit raising,升轨,limited: post-only,仅事件后覆盖
+STARLINK-32413,61590,2024-10-23,,6.0635,orbit raising,升轨,limited: post-only,仅事件后覆盖
+STARLINK-32409,61591,2024-10-23,299.169,5.961,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32422,61592,2024-10-23,298.862,6.1215,orbit raising,升轨,two-sided,事件前后双侧覆盖
+STARLINK-32397,61593,2024-10-23,298.648,6.0872,orbit raising,升轨,two-sided,事件前后双侧覆盖

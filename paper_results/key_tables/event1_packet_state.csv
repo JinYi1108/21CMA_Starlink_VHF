@@ -1,0 +1,13 @@
+,value
+unix_candidate_utc,2025-04-15T13:59:21+00:00
+gps_state_utc,2025-04-15T14:00:00.250000+00:00
+x_ecef_km,345.38784
+y_ecef_km,4474.86109
+z_ecef_km,4961.00917
+vx_ecef_km_s,-6.36108
+vy_ecef_km_s,3.06258
+vz_ecef_km_s,-2.30717
+position_norm_km,6689.939201490544
+velocity_norm_km_s,7.427366184031861
+position_is_physical_leo,True
+velocity_is_physical_leo,True

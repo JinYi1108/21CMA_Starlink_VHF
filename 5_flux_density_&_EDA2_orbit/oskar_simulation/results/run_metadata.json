@@ -25,11 +25,11 @@
     "no cable, gain, or phase errors"
   ],
   "inputs": {
-    "antenna_coordinates": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/5_flux_density/ant_pos.py",
-    "event_directions": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/results/5_flux_density/oskar_input/four_event_direction_timeseries.csv"
+    "antenna_coordinates": "5_flux_density_&_EDA2_orbit/ant_pos.py",
+    "event_directions": "results/5_flux_density/oskar_input/four_event_direction_timeseries.csv"
   },
   "settings": {
-    "image": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/5_flux_density/oskar_simulation/config/e08_horizon_beam_137055.ini",
-    "exact_samples": "/home/yxp/FM/starlink_vhf_137055/21CMA_Starlink_VHF/5_flux_density/oskar_simulation/config/e08_four_event_samples_137055.ini"
+    "image": "5_flux_density_&_EDA2_orbit/oskar_simulation/config/e08_horizon_beam_137055.ini",
+    "exact_samples": "5_flux_density_&_EDA2_orbit/oskar_simulation/config/e08_four_event_samples_137055.ini"
   }
 }

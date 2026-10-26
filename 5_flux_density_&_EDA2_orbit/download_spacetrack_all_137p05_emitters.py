@@ -2,7 +2,7 @@
 """Download historical Space-Track GP records for all 137.05-MHz emitters.
 
 The input is the satellite-date table produced by Section 10.2 of
-``5_flux_density.ipynb``.  Each observing date is expanded by a configurable
+``5_flux_density_&_EDA2_orbit.ipynb``. Each observing date is expanded by a configurable
 margin (14 days by default), overlapping date ranges are merged, and one
 GP_HISTORY request is issued for each merged range.  This gives enough orbital
 history to estimate whether each satellite was raising, stable, or lowering
@@ -89,7 +89,7 @@ def read_satellite_dates(path: Path) -> pd.DataFrame:
     if not path.is_file():
         raise FileNotFoundError(
             f"Missing input table: {path}\n"
-            "Run Sections 10.1 and 10.2 of 5_flux_density.ipynb first."
+            "Run Sections 10.1 and 10.2 of 5_flux_density_&_EDA2_orbit.ipynb first."
         )
 
     combinations = pd.read_csv(path)
